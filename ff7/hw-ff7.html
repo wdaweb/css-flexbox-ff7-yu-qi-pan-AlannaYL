@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      height: 100vh;
+      background: url(./bg-full.jpg) fixed center/cover;
+      backdrop-filter: brightness(30%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    h1 {
+      font-size: 46px;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    p {
+      font-size: 18px;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .container {
+      width: 75%;
+      height: 75%;
+      background-color: #fff;
+    }
+
+    .row {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-content: center;
+      justify-content: flex-start
+    }
+
+    .col:nth-child(1) {
+      width: 50%;
+      height: 100%;
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url(./main.jpg);
+      text-align: center;
+      padding-top: 10%;
+      color: #fff;
+    }
+
+    .col:nth-child(1) img {
+      width: 30%;
+    }
+
+    .col:nth-child(2) {
+      width: 50%;
+      height: 50%;
+      background: #bbb;
+      backdrop-filter: brightness(60%);
+      text-align: left;
+      background-image: url(./cloud.png);
+      background-repeat: no-repeat;
+      background-position: right bottom;
+      background-size: 40%;
+    }
+
+    .coltext {
+      padding-top: 14%;
+      padding-left: 8%;
+      padding-right: 40%;
+    }
+
+    .col:nth-child(3) {
+      width: 50%;
+      height: 50%;
+      background: #000;
+      color: #fff;
+      background-image: url(./tifa.png);
+      background-repeat: no-repeat;
+      background-position: left bottom;
+      background-size: 40%;
+      padding-top: 8%;
+      padding-left: 17%;
+      padding-right: 3%;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <img src="./ps4-ff7.png" alt="">
+        <h1>AVAILABLE NOW</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad aut a maxime soluta odio ex doloremque minima. Ad
+          facilis itaque doloremque corrupti eligendi fuga distinctio ab praesentium dolorum officiis! Vel.</p>
+      </div>
+      <div class="col">
+        <div class="coltext">
+          <h1>Cloud</h1>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore similique voluptas voluptatum
+            quisquamamet consectetur quaerat facilis porro repellat ab sunt Lorem ipsum dolor sit amet consectetur
+            .facilis explicabo ullamquam
+            iusto voluptates qui repudiandae delectus,eligendi cupiditate enim veniam cumque nesciunt architecto
+          </p>
+        </div>
+      </div>
+      <div class="col">
+        <h1>Tifa</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore similique voluptas voluptatum
+          quisquamamet consectetur
+          quaerat facilis porro repellat ab sunt
+          Lorem ipsum dolor sit amet consectetur . facilis explicabo ullam
+          quam
+          iusto voluptates qui repudiandae delectus, eligendi cupiditate enim veniam cumque nesciunt architecto
+        </p>
+      </div>
+    </div>row
+  </div>
+</body>
+
+</html>
